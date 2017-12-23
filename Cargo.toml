@@ -25,4 +25,8 @@ path = "src/client/main.rs"
 name = "cafetiere"
 path = "src/core/lib.rs"
 
+[[example]]
+name = "cafetierecp"
+path = "examples/main.rs"
+
 [dependencies]
