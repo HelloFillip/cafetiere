@@ -8,6 +8,7 @@ repository = "https://github.com:siilime/cafetiere"
 license = "MIT"
 include = [
         "Cargo.toml",
+        "src/client/main.rs",
         "src/core/lib.rs",
         "src/daemon/main.rs",
 ]
@@ -15,6 +16,10 @@ include = [
 [[bin]]
 name = "cafetiered"
 path = "src/daemon/main.rs"
+
+[[bin]]
+name = "cafetiere"
+path = "src/client/main.rs"
 
 [lib]
 name = "cafetiere"
