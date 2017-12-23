@@ -20,7 +20,7 @@ build-app:
     - echo "Building release artifact"
     - make build-release
     - mkdir -p artifacts
-    - mv target/x86_64-unknown-linux-musl/release/libcafetiere.rlib artifacts/
+    - mv target/x86_64-unknown-linux-musl/release/libcafetiere.a artifacts/
     - mv target/x86_64-unknown-linux-musl/release/cafetiered artifacts/
     - make clean
   artifacts:
@@ -54,7 +54,7 @@ test-app:
     - make build
     - make test
     - mkdir -p artifacts
-    - mv target/x86_64-unknown-linux-musl/debug/libcafetiere.rlib artifacts/
+    - mv target/x86_64-unknown-linux-musl/debug/libcafetiere.a artifacts/
     - mv target/x86_64-unknown-linux-musl/debug/cafetiered artifacts/
     - make clean
   tags:
